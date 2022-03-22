@@ -34,6 +34,8 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: ajisha-sb
+    repository: jenkin
   - key: staging
   ingress:
     domain: change.me
@@ -44,10 +46,12 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: ajisha-sb
   repository: bucketrepo
   secretStorage: vault
   vault:
-    url: 127.0.0.1:8200
+    url: user-virtual-machine:8200
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
   enabled: false
